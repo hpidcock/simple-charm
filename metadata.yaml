@@ -1,0 +1,14 @@
+name: simple-charm
+summary: Test
+maintainer: Harry Pidcock <harry.pidcock@canonical.com>
+description: |
+  Test
+tags:
+  - misc
+subordinate: false
+series:
+  - "kubernetes"
+resources:
+  oci-image:
+    type: oci-image
+    description: Backing OCI image
