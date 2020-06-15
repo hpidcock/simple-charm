@@ -2,4 +2,5 @@
 # Here put anything that is needed to start the service.
 # Note that currently this is run directly after install
 # i.e. 'service apache2 start'
-/usr/local/bin/app -l localhost:80
+setsid /usr/local/bin/app -l localhost:80 &
+status-set active "App runnin!"
